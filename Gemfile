@@ -19,6 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 ## Adding calendar through jquery
 gem 'jquery-ui-rails', '~>5.0.5'
 
+#Adding J-query
+gem 'jquery-rails'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -35,6 +38,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Adding bootstrap to your gemfile:
+gem 'bootstrap', '~>4.0.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
