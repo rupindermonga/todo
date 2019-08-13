@@ -40,7 +40,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 #Adding bootstrap to your gemfile:
-gem 'bootstrap', '~>4.0.0'
+gem 'bootstrap-sass'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
