@@ -1,7 +1,9 @@
 <div class="center jumbotron">
-    <h1>Welcome to Your to-do list</h1>
-
-    <%= link_to "Look at your tasks", tasks_path %>
-
-    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    <% if current_user %>
+        <h1>Welcome <%= current_user.username %>, be efficient!</h1>
+        <%= link_to "Look at your tasks", tasks_path %>
+    <% else %>
+        <h1><%= link_to "Sign up now!", :signup, class: "btn btn-lg btn-primary" %> and be efficient!</h1>
+    <% end %>
+    
 </div>

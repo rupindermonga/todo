@@ -9,19 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <p id="notice"><%= notice %></p>
     <p id="alert"><%= alert %></p>
-    <h1>To Do:</h1>
-    <% if current_user %>
-      Keep it up, <%= current_user.username %>!<br>
-      <%= link_to 'Log Out', :logout %>
-    <% else %>
-      <%= link_to 'Log In', :login %> or
-      <%= link_to 'Sign Up', :signup %>
-    <% end %>
 
-
-    <h5><%=  Time.now %></h5>
-    <h5><%= Time.now.strftime("%m/%d/%Y") %></h5>
-    <h5><%= Time.now.strftime("%H:%M:%S") %></h5>
   </head>
 
   <body>
