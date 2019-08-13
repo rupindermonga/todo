@@ -1,0 +1,15 @@
+<h3>Current Tasks:</h3>
+
+<ul>
+    <% @tasks.each do |task| %>
+        <li>
+            <Strong><%= link_to task.title, task_path(task) %></strong>
+            <%= link_to(
+                check_box_tag(:task, :completed, task.completed), 
+                "/tasks/#{task.id}/complete/#{!task.completed}"
+                )%>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "Enter new tasks here", new_task_path %>
