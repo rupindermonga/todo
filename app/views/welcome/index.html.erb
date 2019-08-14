@@ -1,7 +1,7 @@
 <div class="center jumbotron">
     <% if current_user %>
-        <h1>Welcome <%= current_user.username %>, be efficient!</h1>
-        <%= link_to "Look at your tasks", tasks_path %>
+        <h1>Welcome <font color = "green">"<%= current_user.username %>"</font>, be efficient!</h1>
+        <h1><%= link_to "Your tasks", tasks_path %></h1>
     <% else %>
         <h1><%= link_to "Sign up now!", :signup, class: "btn btn-lg btn-primary" %> and be efficient!</h1>
     <% end %>
